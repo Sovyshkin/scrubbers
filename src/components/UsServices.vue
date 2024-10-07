@@ -377,6 +377,7 @@ h1 {
 .card {
   flex: 19%;
   display: flex;
+  min-height: 530px;
   flex-direction: column;
   gap: 20px;
   background-color: #fff;
