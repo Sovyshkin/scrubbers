@@ -314,13 +314,13 @@ export default {
     <div class="cards">
       <div
         class="card"
-        @click="active = !active"
+        @click="card.active = !card.active"
         v-for="card in cards"
         :key="card.name"
       >
         <img class="card-img" :src="'../assets/' + card.img + '.png'" alt="" />
         <div class="name">{{ card.name }}</div>
-        <div class="group" v-if="!active">
+        <div class="group" v-if="!card.active">
           <div
             class="item-group"
             v-for="item in card.items.slice(0, 5)"
@@ -366,8 +366,8 @@ h1 {
 
 .cards {
   display: flex;
-  align-items: stretch;
   gap: 10px;
+  align-items: start;
   flex-wrap: wrap;
 }
 
@@ -448,6 +448,12 @@ h1 {
 @media (max-width: 930px) {
   .wrapper {
     padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    flex-direction: column;
   }
 }
 </style>
