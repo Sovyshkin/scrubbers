@@ -365,6 +365,7 @@ h1 {
 }
 
 .cards {
+  margin: 0 auto;
   display: flex;
   gap: 10px;
   align-items: start;
