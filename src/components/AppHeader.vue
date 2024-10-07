@@ -27,7 +27,7 @@ export default {
       <li class="nav-item" @click="scrollTo('aboutus')">О нас</li>
       <li class="nav-item" @click="scrollTo('services')">Услуги</li>
       <li class="nav-item" @click="scrollTo('contacts')">Контакты</li>
-      <li class="nav-item" @click="scrollTo('contacts')">Филиалы</li>
+      <li class="nav-item" @click="scrollTo('contacts')">Мы на карте</li>
     </nav>
   </div>
 </template>

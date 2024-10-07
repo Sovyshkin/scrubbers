@@ -18,23 +18,22 @@ export default {
           value: "contacts",
         },
         {
-          name: "Филиалы",
+          name: "Мы на карте",
           value: "contacts",
         },
       ],
       contacts: [
         "8 (3532) 30-77-17",
         "8 (9325) 54-44-04",
-        "E-mail: oren-service@yandex.ru",
-        "Адрес: Г Оренбург, ул Монтажников, 23 ",
+        "E-mail: r89058196314@yandex.ru",
+        "Адрес: Г Оренбург, ул Монтажников, 23, 1 этаж, место П14",
       ],
       products: [
-        "Поломоечные машины",
-        "Пылесосы",
-        "Парогенераторы",
-        "Сервис и ремонт поломоечных машин",
-        "Сервис и ремонт пылесосов",
-        "Сервис и ремонт парогенераторов",
+        "Продажа поломоечных машин",
+        "Гарантийное обслуживание",
+        "Сервисный центр",
+        "Запчасти",
+        "Аренда поломоечных машин",
       ],
     };
   },
@@ -78,8 +77,19 @@ export default {
     <div class="contacts">
       <h3>Контакты</h3>
       <div class="wrap-contacts">
-        <div class="contact" v-for="item in contacts" :key="item">
-          {{ item }}
+        <div class="contact">
+          <a href="tel: 8(3532) 30-77-17" class="item-group"
+            >8(3532) 30-77-17</a
+          >
+        </div>
+        <div class="contact">
+          <a href="tel: 8 (9325) 54-44-04" class="item-group"
+            >8 (9325) 54-44-04</a
+          >
+        </div>
+        <div class="contact">E-mail: r89058196314@yandex.ru</div>
+        <div class="contact">
+          Адрес: Г Оренбург, ул Монтажников, 23, 1 этаж, место П14
         </div>
       </div>
     </div>
@@ -132,6 +142,16 @@ h3 {
   color: #fff;
   width: fit-content;
   cursor: pointer;
+}
+
+a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #fff;
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .logo-polic {
@@ -209,6 +229,7 @@ h3 {
   .wrap-contacts,
   .wrap-items,
   .wrap-product {
+    width: 80%;
     flex-direction: row;
     align-items: center;
     justify-content: center;

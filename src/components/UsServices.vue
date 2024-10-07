@@ -330,6 +330,7 @@ export default {
             <span class="item-value">{{ item.value }}</span>
           </div>
           <div class="wrap-arrow">
+            <a class="number" href="tel: 8(3532) 30-77-17">Запрос стоимости</a>
             <img class="arrow" src="../assets/arrow-down.png" alt="" />
           </div>
         </div>
@@ -339,6 +340,7 @@ export default {
             <span class="item-value">{{ item.value }}</span>
           </div>
           <div class="wrap-arrow">
+            <a class="number" href="tel: 8(3532) 30-77-17">Запрос стоимости</a>
             <img class="arrow top" src="../assets/arrow-down.png" alt="" />
           </div>
         </div>
@@ -380,7 +382,7 @@ h1 {
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 10px;
-  padding: 15px 15px 40px 15px;
+  padding: 15px 15px 100px 15px;
   transition: all 500ms ease;
   position: relative;
 }
@@ -437,6 +439,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .arrow {
@@ -446,6 +450,17 @@ h1 {
   transform: rotate(180deg);
 }
 
+.number {
+  background-color: #dc080a;
+  padding: 7px 12px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 400;
+  border-radius: 10px;
+  transition: all 500ms ease;
+}
 @media (max-width: 930px) {
   .wrapper {
     padding: 20px 10px;

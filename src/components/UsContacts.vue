@@ -17,15 +17,19 @@ export default {
       <div class="info">
         <div class="group">
           <span class="item-group main">Адрес:</span>
-          <span class="item-group">Г Оренбург, ул Монтажников, 23</span>
+          <span class="item-group"
+            >Г Оренбург, ул Монтажников, 23, 1 этаж, место П14</span
+          >
         </div>
         <div class="group">
           <span class="item-group main">Телефон:</span>
-          <span class="item-group">8(3532) 30-77-17</span>
+          <a href="tel: 8(3532) 30-77-17" class="item-group"
+            >8(3532) 30-77-17</a
+          >
         </div>
         <div class="group">
           <span class="item-group main">E-mail:</span>
-          <span class="item-group">oren-service@yandex.ru</span>
+          <span class="item-group">r89058196314@yandex.ru</span>
         </div>
         <div class="group">
           <span class="item-group main">Время работы:</span>
@@ -86,6 +90,7 @@ h1 {
 
 .wrap-map {
   overflow: hidden;
+  height: 32vh;
   border-radius: 15px;
 }
 

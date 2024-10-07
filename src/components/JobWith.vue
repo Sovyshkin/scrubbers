@@ -13,7 +13,7 @@ export default {
   <div class="wrapper">
     <h1>Работа с нами это:</h1>
     <div class="wrap-group">
-      <img src="../assets/block2.png" alt="" />
+      <img src="../assets/block2.jpeg" alt="" />
       <div class="listGroup">
         <div class="group">
           <li class="item-group">
@@ -91,9 +91,8 @@ h1 {
 }
 
 img {
-  transform: rotate(90deg);
   width: 239px;
-  height: 359px;
+  height: 300px;
   object-fit: cover;
   border-radius: 15px;
   transition: all 500ms ease;
