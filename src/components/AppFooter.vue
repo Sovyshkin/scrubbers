@@ -224,6 +224,7 @@ a {
   .contacts,
   .products {
     align-items: center;
+    text-align: center;
   }
 
   .wrap-contacts,
