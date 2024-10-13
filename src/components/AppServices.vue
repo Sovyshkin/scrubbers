@@ -164,6 +164,7 @@ img:hover {
   font-weight: 400;
   cursor: pointer;
   color: #fff;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
