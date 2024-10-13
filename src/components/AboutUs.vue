@@ -32,12 +32,21 @@ export default {
 .wrapper {
   position: relative;
   width: 100%;
-  padding: 90px 40px 30px 40px;
+  padding: 110px 40px 30px 40px;
   background: linear-gradient(90deg, #01091d 0%, #050f2b 100%);
   display: flex;
   flex-direction: column;
   gap: 40px;
-  border-radius: 50px;
+}
+
+.wrapper2 {
+  border-radius: 0 0 50px 50px;
+  width: 100%;
+  padding: 40px 40px 20px 40px;
+  background: linear-gradient(90deg, #01091d 0%, #050f2b 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 h1 {
@@ -124,12 +133,20 @@ img {
   .wrapper {
     padding: 90px 10px 20px 10px;
   }
+
+  .wrapper2 {
+    padding: 20px 10px;
+  }
   .wrap-desc {
     width: 100%;
   }
 
   .desc {
     padding: 7px;
+  }
+
+  .group {
+    width: 100%;
   }
 }
 

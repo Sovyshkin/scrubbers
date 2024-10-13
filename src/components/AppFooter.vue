@@ -29,11 +29,13 @@ export default {
         "Адрес: Г Оренбург, ул Монтажников, 23, 1 этаж, место П14",
       ],
       products: [
-        "Продажа поломоечных машин",
-        "Гарантийное обслуживание",
-        "Сервисный центр",
-        "Запчасти",
-        "Аренда поломоечных машин",
+        "Комплексное обслуживание коммерческой недвижимости",
+        "Уборка после строительства ",
+        "Мойка фасадов",
+        "Уборка прилегающей территории",
+        "Мойка окон и витражей",
+        "Аренда поломоечных машин на сутки и длительный срок",
+        "Ремонт и техническое обслуживание поломоечных машин",
       ],
     };
   },
@@ -54,7 +56,10 @@ export default {
 <template>
   <div class="wrapper">
     <nav class="group">
-      <span class="logo">NOBLELIFTOREN</span>
+      <div class="wrap-logo">
+        <img class="logo" src="../assets/logo.png" alt="" />
+        <span>ОФИЦИАЛЬНЫЙ ДИЛЕР ПОЛОМОЕЧНОЙ ТЕХНИКИ <b>NOBLELIFT</b></span>
+      </div>
       <div class="wrap-items">
         <li
           class="nav-item"
@@ -91,6 +96,9 @@ export default {
         <div class="contact">
           Адрес: Г Оренбург, ул Монтажников, 23, 1 этаж, место П14
         </div>
+        <a href="https://vk.com/noblelift_oren" target="_blank"
+          ><img class="vk" src="../assets/vk.png" alt=""
+        /></a>
       </div>
     </div>
   </div>
@@ -114,11 +122,27 @@ h3 {
   line-height: 17px;
 }
 
-.logo {
-  font-size: 25px;
+.wrap-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.wrap-logo span {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
   color: #fff;
-  font-weight: 700;
-  line-height: 28px;
+}
+
+.wrap-logo span b {
+  color: rgb(227, 108, 9);
+}
+
+.logo {
+  max-height: 140px;
+  max-width: 140px;
 }
 
 .group,
@@ -192,6 +216,11 @@ a {
 .product:focus::after,
 .product:hover::after {
   width: 100%;
+}
+
+.vk {
+  height: 40px;
+  width: 40px;
 }
 @media (max-width: 930px) {
   .wrapper {

@@ -23,11 +23,18 @@ export default {
 
 <template>
   <div class="wrapper">
+    <div class="wrap-logo">
+      <img class="logo" src="../assets/logo.png" alt="" />
+      <span>ОФИЦИАЛЬНЫЙ ДИЛЕР ПОЛОМОЕЧНОЙ ТЕХНИКИ <b>NOBLELIFT</b></span>
+    </div>
     <nav class="group">
-      <li class="nav-item" @click="scrollTo('aboutus')">О нас</li>
+      <li class="nav-item" @click="scrollTo('aboutus')">О компании</li>
       <li class="nav-item" @click="scrollTo('services')">Услуги</li>
+      <li class="nav-item" @click="scrollTo('model')">Модельный ряд</li>
       <li class="nav-item" @click="scrollTo('contacts')">Контакты</li>
-      <li class="nav-item" @click="scrollTo('contacts')">Мы на карте</li>
+      <a href="https://vk.com/noblelift_oren" target="_blank"
+        ><img class="vk" src="../assets/vk.png" alt=""
+      /></a>
     </nav>
   </div>
 </template>
@@ -39,7 +46,8 @@ export default {
   padding: 10px 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
   background: linear-gradient(90deg, #01091d 0%, #050f2b 100%);
   z-index: 3;
 }
@@ -47,7 +55,7 @@ export default {
 .group {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   transition: all 400ms ease;
 }
 .nav-item {
@@ -75,16 +83,73 @@ export default {
   width: 100%;
 }
 
+.wrap-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wrap-logo span {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrap-logo span b {
+  color: rgb(227, 108, 9);
+}
+
+.logo {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.vk {
+  height: 40px;
+  width: 40px;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrap-logo {
+    gap: 8px;
+  }
+  .logo {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 500px) {
   .wrapper {
     padding: 10px;
   }
   .group {
-    gap: 15px;
+    gap: 7px;
   }
 
   .nav-item {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+
+  .vk {
+    height: 30px;
+    height: 30px;
+    object-fit: cover;
   }
 }
 </style>

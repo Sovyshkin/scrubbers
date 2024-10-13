@@ -1,8 +1,8 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AboutUs from "./components/AboutUs.vue";
-import JobWith from "./components/JobWith.vue";
-import UsServices from "./components/UsServices.vue";
+import AppServices from "./components/AppServices.vue";
+import AppModel from "./components/AppModel.vue";
 import UsContacts from "./components/UsContacts.vue";
 import AppFooter from "./components/AppFooter.vue";
 export default {
@@ -10,10 +10,10 @@ export default {
   components: {
     AppHeader,
     AboutUs,
-    JobWith,
+    AppServices,
     UsContacts,
     AppFooter,
-    UsServices,
+    AppModel,
   },
   data() {
     return {};
@@ -25,8 +25,8 @@ export default {
 <template>
   <AppHeader />
   <AboutUs id="aboutus" />
-  <JobWith id="jobwith" />
-  <UsServices id="services" />
+  <AppServices id="services" />
+  <AppModel id="model" />
   <UsContacts id="contacts" />
   <AppFooter />
 </template>
