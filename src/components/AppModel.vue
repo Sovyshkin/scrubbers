@@ -372,7 +372,6 @@ h1 {
   margin: 0 auto;
   display: flex;
   gap: 10px;
-  align-items: start;
   flex-wrap: wrap;
 }
 

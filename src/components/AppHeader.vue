@@ -114,9 +114,6 @@ export default {
   .wrapper {
     flex-direction: column;
   }
-}
-
-@media (max-width: 700px) {
   .wrap-logo {
     gap: 8px;
   }

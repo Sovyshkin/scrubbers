@@ -131,7 +131,7 @@ img {
 
 @media (max-width: 930px) {
   .wrapper {
-    padding: 90px 10px 20px 10px;
+    padding: 110px 10px 20px 10px;
   }
 
   .wrapper2 {
