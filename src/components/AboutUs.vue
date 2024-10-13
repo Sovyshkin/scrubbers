@@ -168,7 +168,7 @@ img {
   }
 
   .wrapper {
-    padding-top: 40px;
+    padding-top: 110px;
   }
 }
 
