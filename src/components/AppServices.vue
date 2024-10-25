@@ -53,18 +53,20 @@ export default {
     <div class="services">
       <div class="group-obj">
         <h2>Клининг</h2>
-        <li class="item-group">
-          <div class="listStyle"></div>
-          <span>Комплексное обслуживание коммерческой недвижимости</span>
-        </li>
-        <li class="item-group">
-          <div class="listStyle"></div>
-          <span>Мойка окон и витражей</span>
-        </li>
-        <li class="item-group">
-          <div class="listStyle"></div>
-          <span>Уборка после строительства</span>
-        </li>
+        <div class="wrap-items">
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Комплексное обслуживание коммерческой недвижимости</span>
+          </li>
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Мойка окон и витражей</span>
+          </li>
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Уборка после строительства</span>
+          </li>
+        </div>
       </div>
       <div class="group-obj">
         <h2>Аренда поломоечных машин</h2>
@@ -186,6 +188,13 @@ img:hover {
 }
 
 .group-obj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.wrap-items {
   display: flex;
   flex-direction: column;
   gap: 15px;

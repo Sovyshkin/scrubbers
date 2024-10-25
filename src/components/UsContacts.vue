@@ -24,12 +24,8 @@ export default {
         <div class="group">
           <span class="item-group main">Телефон:</span>
           <div class="group-phone">
-            <a href="tel: +7 353 230-77-17" class="item-group"
-              >+7 353 230-77-17</a
-            >
-            <a href="tel: +7 932 554-44-04" class="item-group"
-              >+7 932 554-44-04</a
-            >
+            <a href="tel: +73532307717" class="item-group">+7-353-230-77-17</a>
+            <a href="tel: +79325544404" class="item-group">+7-932-554-44-04</a>
           </div>
         </div>
         <div class="group">
