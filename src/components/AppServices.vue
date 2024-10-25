@@ -11,49 +11,82 @@ export default {
 </script>
 <template>
   <div class="wrapper">
-    <h1>Услуги</h1>
+    <h1>Для каких объектов подходят наши машины</h1>
     <div class="wrap-group">
-      <div class="wrap-img"><img src="../assets/card4.png" alt="" /></div>
+      <div class="wrap-img"><img src="../assets/block2.jpeg" alt="" /></div>
       <div class="group">
         <li class="item-group">
           <div class="listStyle"></div>
-          <span>Продажа</span>
+          <span>торгово-развлекательные центры</span>
         </li>
         <li class="item-group">
           <div class="listStyle"></div>
-          <span>Гарантийное обслуживание</span>
+          <span>бизнес центры</span>
         </li>
         <li class="item-group">
           <div class="listStyle"></div>
-          <span>Сервисное Обслуживание</span>
+          <span>медицинские учреждения</span>
         </li>
         <li class="item-group">
           <div class="listStyle"></div>
-          <span>Запчасти</span>
+          <span>аэровокзалы</span>
         </li>
         <li class="item-group">
           <div class="listStyle"></div>
-          <span>Аренда</span>
+          <span>распределительные центры</span>
+        </li>
+        <li class="item-group">
+          <div class="listStyle"></div>
+          <span>складские помещения</span>
+        </li>
+        <li class="item-group">
+          <div class="listStyle"></div>
+          <span>производственные помещения</span>
+        </li>
+        <li class="item-group">
+          <div class="listStyle"></div>
+          <span>паркинг</span>
         </li>
       </div>
     </div>
-    <h2>Для каких объектов подходят наши машины</h2>
-    <div class="group-obj">
-      <span>Торгово-развлекательные центры</span>
-      <span>Бизнес центры</span>
-      <span>Аэровокзалы</span>
-      <span>Складские помещения</span>
-      <span>Медицинские учреждения</span>
-      <span>Распределительные центры</span>
-      <span>Паркинг</span>
-      <span>Производственные помещения</span>
+    <h1>Услуги</h1>
+    <div class="services">
+      <div class="group-obj">
+        <h2>Клининг</h2>
+        <li class="item-group">
+          <div class="listStyle"></div>
+          <span>Комплексное обслуживание коммерческой недвижимости</span>
+        </li>
+        <li class="item-group">
+          <div class="listStyle"></div>
+          <span>Мойка окон и витражей</span>
+        </li>
+        <li class="item-group">
+          <div class="listStyle"></div>
+          <span>Уборка после строительства</span>
+        </li>
+      </div>
+      <div class="group-obj">
+        <h2>Аренда поломоечных машин</h2>
+        <li class="item-group">
+          <div class="listStyle"></div>
+          <span>Аренда поломоечных машин на сутки и длительный срок</span>
+        </li>
+      </div>
+      <div class="group-obj">
+        <h2>Сервисное обслуживание</h2>
+        <li class="item-group">
+          <div class="listStyle"></div>
+          <span>Ремонт и техническое обслуживание поломоечных машин</span>
+        </li>
+      </div>
     </div>
   </div>
 </template>
 <style scoped>
 .wrapper {
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 40px 20px 40px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -68,14 +101,16 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 30px;
+  line-height: 32px;
   color: #fff;
 }
 
 .listStyle {
-  width: 9px;
-  height: 9px;
+  min-width: 9px;
+  min-height: 9px;
+  max-width: 9px;
+  max-height: 9px;
   border-radius: 100%;
   background-color: #feb803;
 }
@@ -93,10 +128,11 @@ h2 {
 }
 
 .group {
+  width: 60%;
   list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -104,12 +140,15 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 239px;
-  height: 300px;
+  border-radius: 15px;
 }
 
 img {
+  width: 359px;
+  height: 302px;
   transition: all 500ms ease;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 img:hover {
@@ -117,6 +156,7 @@ img:hover {
 }
 
 .item-group {
+  flex: 48%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -129,8 +169,7 @@ img:hover {
   color: #fff;
 }
 
-.item-group span::after,
-.group-obj span::after {
+.item-group span::after {
   margin-top: 2px;
   background-color: #fff; /* Цвет линии при наведении на нее курсора мыши */
   display: block;
@@ -142,29 +181,20 @@ img:hover {
   transition: width 0.3s ease-in-out;
 }
 .item-group span:hover:after,
-.item-group span:focus:after,
-.group-obj span:hover:after,
-.group-obj span:focus:after {
+.item-group span:focus:after {
   width: 100%;
 }
 
 .group-obj {
-  margin: 0 auto;
-  width: 70%;
   display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 15px;
 }
 
-.group-obj span {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  cursor: pointer;
-  color: #fff;
-  text-align: center;
+.services {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 @media (max-width: 1200px) {
@@ -176,6 +206,13 @@ img:hover {
 
   .group {
     gap: 15px;
+  }
+
+  .item-group span {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
   }
 }
 
@@ -189,6 +226,15 @@ img:hover {
   .item-group span {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .services {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .group-obj {
+    align-items: center;
   }
 }
 

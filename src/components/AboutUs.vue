@@ -11,20 +11,20 @@ export default {
 </script>
 <template>
   <div class="wrapper">
-    <h1>Поломоечные машины: чистота и комфорт вашего пространства</h1>
-    <img src="../assets/block1.png" alt="" />
-    <div class="wrap-desc">
-      <div class="left">
-        <div class="desc">Быстро и эффективно</div>
-        <div class="desc">Современные технологии</div>
+    <h1>Официальный диллер поломоечной техники NOBLELIFT</h1>
+    <div class="wrap">
+      <div class="group-img">
+        <img src="../assets/card4.png" alt="" class="card" />
+        <img src="../assets/glare.png" alt="" class="glare" />
       </div>
-      <div class="right">
-        <div class="desc">Удобство использования</div>
-        <div class="desc">Экономия времени и труда</div>
+      <div class="wrap-btns">
+        <div class="desc">Продажа</div>
+        <div class="desc">Гарантийное обслуживание</div>
+        <div class="desc">Сервисное обслуживание</div>
+        <div class="desc">Запчасти</div>
+        <div class="desc">Аренда</div>
+        <a class="number" href="tel: 8(3532) 30-77-17">Запрос стоимости</a>
       </div>
-    </div>
-    <div class="wrap-btns">
-      <a class="number" href="tel: 8(3532) 30-77-17">Запрос стоимости</a>
     </div>
   </div>
 </template>
@@ -37,16 +37,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 40px;
-}
-
-.wrapper2 {
-  border-radius: 0 0 50px 50px;
-  width: 100%;
-  padding: 40px 40px 20px 40px;
-  background: linear-gradient(90deg, #01091d 0%, #050f2b 100%);
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  overflow: hidden;
 }
 
 h1 {
@@ -57,35 +48,8 @@ h1 {
   z-index: 2;
 }
 
-img {
-  position: absolute;
-  width: 70%;
-  height: auto;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.wrap-desc {
-  padding-top: 250px;
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 2;
-}
-
-.left,
-.right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
 .desc {
-  width: fit-content;
+  width: 100%;
   padding: 12px;
   background: linear-gradient(90deg, #feb803 0%, #ff9a06 100%);
   border-radius: 15px;
@@ -94,6 +58,8 @@ img {
   font-size: 25px;
   line-height: 28px;
   transition: all 500ms ease;
+  text-align: center;
+  max-width: 367px;
 }
 
 .desc:hover,
@@ -103,14 +69,17 @@ img {
 }
 
 .wrap-btns {
-  width: 100%;
+  width: 40%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
   z-index: 2;
 }
 
 .number {
+  width: 100%;
   background-color: #dc080a;
   padding: 10px 15px;
   text-decoration: none;
@@ -120,6 +89,39 @@ img {
   font-weight: 400;
   border-radius: 15px;
   transition: all 500ms ease;
+  text-align: center;
+  max-width: 367px;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  z-index: 2;
+}
+
+.group-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glare {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.card {
+  width: 70%;
+  max-width: 600px;
 }
 
 @media (max-width: 1500px) {
@@ -134,13 +136,6 @@ img {
     padding: 110px 10px 20px 10px;
   }
 
-  .wrapper2 {
-    padding: 20px 10px;
-  }
-  .wrap-desc {
-    width: 100%;
-  }
-
   .desc {
     padding: 7px;
   }
@@ -150,53 +145,26 @@ img {
   }
 }
 
-@media (max-width: 700px) {
-  img {
-    width: 100%;
+@media (max-width: 800px) {
+  .wrap {
+    flex-direction: column;
   }
+
+  .wrap-btns {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
   .desc,
   .number {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 500px) {
-  img {
-    width: 600px;
-    height: 600px;
-    object-fit: cover;
-  }
-
   .wrapper {
     padding-top: 110px;
-  }
-}
-
-@media (max-width: 420px) {
-  .desc {
-    padding: 4px 6px;
-    font-size: 11px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 350px) {
-  .wrap-desc {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .left,
-  .right {
-    align-items: stretch;
-    justify-content: stretch;
-    gap: 10px;
-  }
-
-  .desc {
-    width: 160px;
-    font-size: 13px;
-    line-height: 10px;
-    padding: 7px 10px;
   }
 }
 </style>

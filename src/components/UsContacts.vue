@@ -23,9 +23,14 @@ export default {
         </div>
         <div class="group">
           <span class="item-group main">Телефон:</span>
-          <a href="tel: 8(3532) 30-77-17" class="item-group"
-            >8(3532) 30-77-17</a
-          >
+          <div class="group-phone">
+            <a href="tel: +7 353 230-77-17" class="item-group"
+              >+7 353 230-77-17</a
+            >
+            <a href="tel: +7 932 554-44-04" class="item-group"
+              >+7 932 554-44-04</a
+            >
+          </div>
         </div>
         <div class="group">
           <span class="item-group main">E-mail:</span>
@@ -90,7 +95,7 @@ h1 {
 
 .wrap-map {
   overflow: hidden;
-  height: 32vh;
+  height: 36.5vh;
   border-radius: 15px;
 }
 
@@ -119,6 +124,12 @@ h1 {
 .item-group:hover:after,
 .item-group:focus:after {
   width: 100%;
+}
+
+.group-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media (max-width: 1200px) {

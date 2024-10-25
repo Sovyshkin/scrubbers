@@ -1,10 +1,10 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import AboutUs from "./components/AboutUs.vue";
 import AppServices from "./components/AppServices.vue";
 import AppModel from "./components/AppModel.vue";
 import UsContacts from "./components/UsContacts.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AboutUs from "./components/AboutUs.vue";
 export default {
   name: "App",
   components: {
