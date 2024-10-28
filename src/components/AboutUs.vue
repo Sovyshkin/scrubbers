@@ -11,7 +11,7 @@ export default {
 </script>
 <template>
   <div class="wrapper">
-    <h1>Официальный диллер поломоечной техники NOBLELIFT</h1>
+    <h1>Официальный Дилер поломоечной техники NOBLELIFT</h1>
     <div class="wrap">
       <div class="group-img">
         <img src="../assets/card4.png" alt="" class="card" />

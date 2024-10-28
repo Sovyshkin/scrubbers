@@ -23,10 +23,10 @@ export default {
         },
       ],
       contacts: [
-        "+7-353-230-77-17",
-        "+7-932-554-44-04",
-        "E-mail: r89058196314@yandex.ru",
-        "Адрес: Г Оренбург, ул Монтажников, 23, 1 этаж, место П14",
+        "8(3532) 30-77-17",
+        "8(9325) 54-44-04",
+        "E-mail: oren-service@yandex.ru",
+        "Адрес: Г Оренбург, ул Монтажников, 23, 1 этаж, офис П14",
       ],
       products: [
         "Поломоечные машины",
@@ -82,14 +82,14 @@ export default {
       <h3>Контакты</h3>
       <div class="wrap-contacts">
         <div class="contact">
-          <a href="tel: +73532307717" class="item-group">+7-353-230-77-17</a>
+          <a href="tel: +73532307717" class="item-group">8(3532) 30-77-17</a>
         </div>
         <div class="contact">
-          <a href="tel: +79325544404" class="item-group">+7-932-554-44-04</a>
+          <a href="tel: +79325544404" class="item-group">8(9325) 54-44-04</a>
         </div>
-        <div class="contact">E-mail: r89058196314@yandex.ru</div>
+        <div class="contact">E-mail: oren-service@yandex.ru</div>
         <div class="contact">
-          Адрес: Г Оренбург, ул Монтажников, 23, 1 этаж, место П14
+          Адрес: Г Оренбург, ул Монтажников, 23, 1 этаж, офис П14
         </div>
         <a href="https://vk.com/noblelift_oren" target="_blank"
           ><img class="vk" src="../assets/vk.png" alt=""

@@ -18,23 +18,23 @@ export default {
         <div class="group">
           <span class="item-group main">Адрес:</span>
           <span class="item-group"
-            >Г Оренбург, ул Монтажников, 23, 1 этаж, место П14</span
+            >Г Оренбург, ул Монтажников, 23, 1 этаж, офис П14</span
           >
         </div>
         <div class="group">
           <span class="item-group main">Телефон:</span>
           <div class="group-phone">
-            <a href="tel: +73532307717" class="item-group">+7-353-230-77-17</a>
-            <a href="tel: +79325544404" class="item-group">+7-932-554-44-04</a>
+            <a href="tel: +73532307717" class="item-group">8(3532) 30-77-17</a>
+            <a href="tel: +79325544404" class="item-group">8(9325) 54-44-04</a>
           </div>
         </div>
         <div class="group">
           <span class="item-group main">E-mail:</span>
-          <span class="item-group">r89058196314@yandex.ru</span>
+          <span class="item-group">oren-service@yandex.ru</span>
         </div>
         <div class="group">
           <span class="item-group main">Время работы:</span>
-          <span class="item-group">пн-пт с 10:00 до 19:00</span>
+          <span class="item-group">пн-пт с 9:00 до 18:00</span>
         </div>
       </div>
       <div class="wrap-map">
