@@ -18,14 +18,16 @@ export default {
         <div class="group">
           <span class="item-group main">Адрес:</span>
           <span class="item-group"
-            >Г Оренбург, ул Монтажников, 23, 1 этаж, офис П14</span
+            >г Оренбург, ул Монтажников, 23, 1 этаж, офис П14</span
           >
         </div>
         <div class="group">
           <span class="item-group main">Телефон:</span>
           <div class="group-phone">
-            <a href="tel: +73532307717" class="item-group">8(3532) 30-77-17</a>
-            <a href="tel: +79325544404" class="item-group">8(9325) 54-44-04</a>
+            <a href="tel: +73532307717" class="item-group"
+              >+7 (3532) 30-77-17
+            </a>
+            <a href="tel: +79325544404" class="item-group">+7-932-554-44-04</a>
           </div>
         </div>
         <div class="group">
