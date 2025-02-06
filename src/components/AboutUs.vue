@@ -5,13 +5,23 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    open() {
+      try {
+        this.$emit("open");
+      } catch (err) {
+        console.log(err);
+      }
+    },
+  },
   mounted() {},
 };
 </script>
 <template>
   <div class="wrapper">
-    <h1>Официальный Дилер поломоечной техники NOBLELIFT</h1>
+    <h1>
+      Официальный Дилер поломоечной техники <span class="noble">NOBLELIFT</span>
+    </h1>
     <div class="wrap">
       <div class="group-img">
         <img src="../assets/card4.png" alt="" class="card" />
@@ -23,7 +33,7 @@ export default {
         <div class="desc">Сервисное обслуживание</div>
         <div class="desc">Запчасти</div>
         <div class="desc">Аренда</div>
-        <a class="number" href="tel: 8(3532) 30-77-17">Запрос стоимости</a>
+        <div class="number" @click="open">Запрос стоимости</div>
       </div>
     </div>
   </div>
@@ -32,7 +42,7 @@ export default {
 .wrapper {
   position: relative;
   width: 100%;
-  padding: 110px 40px 30px 40px;
+  padding: 120px 40px 30px 40px;
   background: linear-gradient(90deg, #01091d 0%, #050f2b 100%);
   display: flex;
   flex-direction: column;
@@ -41,11 +51,12 @@ export default {
 }
 
 h1 {
-  width: 80%;
+  width: 100%;
   color: #fff;
   font-size: 50px;
   line-height: 57px;
   z-index: 2;
+  text-align: center;
 }
 
 .desc {
@@ -124,6 +135,10 @@ h1 {
   max-width: 600px;
 }
 
+.noble {
+  color: rgb(227, 108, 9);
+}
+
 @media (max-width: 1500px) {
   .desc,
   .number {
@@ -133,7 +148,7 @@ h1 {
 
 @media (max-width: 930px) {
   .wrapper {
-    padding: 110px 10px 20px 10px;
+    padding: 120px 10px 20px 10px;
   }
 
   .desc {

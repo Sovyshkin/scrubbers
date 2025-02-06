@@ -90,6 +90,9 @@ export default {
         <div class="contact">
           Адрес: г Оренбург, ул Монтажников, 23, 1 этаж, офис П14
         </div>
+        <div class="contact">
+          Сайт: <a href="https://чистыйсервис.online/">чистыйсервис.online</a>
+        </div>
         <a href="https://vk.com/noblelift_oren" target="_blank"
           ><img class="vk" src="../assets/vk.png" alt=""
         /></a>
@@ -110,6 +113,7 @@ export default {
 }
 
 h3 {
+  width: fit-content;
   color: #ffffff;
   font-weight: 700;
   font-size: 15px;
@@ -137,6 +141,11 @@ h3 {
 .logo {
   max-height: 140px;
   max-width: 140px;
+}
+
+.contacts,
+.products {
+  padding-top: 53px;
 }
 
 .group,
@@ -216,6 +225,22 @@ a {
   height: 40px;
   width: 40px;
 }
+
+h3::after {
+  margin-top: 2px;
+  background-color: rgb(
+    227,
+    108,
+    9
+  ); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 100%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
 @media (max-width: 930px) {
   .wrapper {
     padding: 20px 10px;
@@ -248,6 +273,7 @@ a {
   .products {
     align-items: center;
     text-align: center;
+    padding-top: 0;
   }
 
   .wrap-contacts,

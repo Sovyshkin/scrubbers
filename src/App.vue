@@ -5,6 +5,7 @@ import AppModel from "./components/AppModel.vue";
 import UsContacts from "./components/UsContacts.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AboutUs from "./components/AboutUs.vue";
+import AppModal from "./components/AppModal.vue";
 export default {
   name: "App",
   components: {
@@ -14,9 +15,12 @@ export default {
     UsContacts,
     AppFooter,
     AppModel,
+    AppModal,
   },
   data() {
-    return {};
+    return {
+      modal: false,
+    };
   },
   methods: {},
   mounted() {},
@@ -24,11 +28,14 @@ export default {
 </script>
 <template>
   <AppHeader />
-  <AboutUs id="aboutus" />
+  <AboutUs id="aboutus" @open="modal = true" />
   <AppServices id="services" />
   <AppModel id="model" />
   <UsContacts id="contacts" />
   <AppFooter />
+  <v-dialog max-width="500" v-if="modal" v-model="modal">
+    <AppModal @close="modal = false" />
+  </v-dialog>
 </template>
 <style>
 #app {

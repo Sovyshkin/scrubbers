@@ -25,7 +25,6 @@ export default {
   <div class="wrapper">
     <div class="wrap-logo">
       <img class="logo" src="../assets/logo.png" alt="" />
-      <span>ОФИЦИАЛЬНЫЙ ДИЛЕР ПОЛОМОЕЧНОЙ ТЕХНИКИ <b>NOBLELIFT</b></span>
     </div>
     <nav class="group">
       <li class="nav-item" @click="scrollTo('aboutus')">О компании</li>
@@ -101,8 +100,8 @@ export default {
 }
 
 .logo {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 250px;
+  max-width: 250px;
 }
 
 .vk {

@@ -38,6 +38,12 @@ export default {
           <span class="item-group main">Время работы:</span>
           <span class="item-group">пн-пт с 9:00 до 18:00</span>
         </div>
+        <div class="group">
+          <span class="item-group main">Сайт:</span>
+          <span class="item-group"
+            ><a href="https://чистыйсервис.online/">чистыйсервис.online</a>
+          </span>
+        </div>
       </div>
       <div class="wrap-map">
         <AppMap />
@@ -93,11 +99,12 @@ h1 {
 
 .wrap-map {
   overflow: hidden;
-  height: 36.5vh;
+  height: 38vh;
   border-radius: 15px;
 }
 
-.item-group {
+.item-group,
+.item-group a {
   font-size: 25px;
   line-height: 28px;
   font-weight: 400;
@@ -136,7 +143,8 @@ h1 {
     padding: 15px;
   }
 
-  .item-group {
+  .item-group,
+  .item-group a {
     font-size: 20px;
     line-height: 20px;
   }
@@ -155,7 +163,8 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  .item-group {
+  .item-group,
+  .item-group a {
     font-size: 16px;
     line-height: 16px;
   }

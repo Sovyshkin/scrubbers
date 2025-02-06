@@ -53,7 +53,7 @@ export default {
     <div class="services">
       <div class="group-obj">
         <h2>Клининг</h2>
-        <div class="wrap-items">
+        <div class="group-items">
           <li class="item-group">
             <div class="listStyle"></div>
             <span>Комплексное обслуживание коммерческой недвижимости</span>
@@ -70,17 +70,21 @@ export default {
       </div>
       <div class="group-obj">
         <h2>Аренда поломоечных машин</h2>
-        <li class="item-group">
-          <div class="listStyle"></div>
-          <span>Аренда поломоечных машин на сутки и длительный срок</span>
-        </li>
+        <div class="group-items">
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Аренда поломоечных машин на сутки и длительный срок</span>
+          </li>
+        </div>
       </div>
       <div class="group-obj">
         <h2>Сервисное обслуживание</h2>
-        <li class="item-group">
-          <div class="listStyle"></div>
-          <span>Ремонт и техническое обслуживание поломоечных машин</span>
-        </li>
+        <div class="group-items">
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Ремонт и техническое обслуживание поломоечных машин</span>
+          </li>
+        </div>
       </div>
     </div>
   </div>
@@ -106,6 +110,22 @@ h2 {
   font-size: 30px;
   line-height: 32px;
   color: #fff;
+}
+
+h2::after {
+  margin-top: 2px;
+  background-color: rgb(
+    227,
+    108,
+    9
+  ); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 100%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .listStyle {
@@ -146,8 +166,7 @@ h2 {
 }
 
 img {
-  width: 359px;
-  height: 302px;
+  width: 330px;
   transition: all 500ms ease;
   object-fit: cover;
   border-radius: 15px;
@@ -155,6 +174,12 @@ img {
 
 img:hover {
   scale: 1.03;
+}
+
+.group-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .item-group {
@@ -250,6 +275,10 @@ img:hover {
 @media (max-width: 530px) {
   .wrap-group {
     flex-direction: column;
+  }
+
+  h2 {
+    width: 100%;
   }
 }
 </style>
