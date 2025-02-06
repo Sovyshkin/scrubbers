@@ -17,7 +17,7 @@ export default {
     },
     async copyText() {
       try {
-        await navigator.clipboard.writeText("8(3532) 30-77-17");
+        await navigator.clipboard.writeText("+7 (3532) 30-77-17");
         this.message = "Скопировано";
         setTimeout(() => {
           this.message = "";
@@ -38,10 +38,10 @@ export default {
     </div>
     <div class="group" @click="copyText">
       <img class="phone" src="../assets/phone.png" alt="" />
-      <span>8(3532) 30-77-17</span>
+      <span>+7 (3532) 30-77-17</span>
       <img class="copy" src="../assets/copy.png" alt="" />
     </div>
-    <a class="call" href="tel: 8(3532) 30-77-17" v-if="!message">Позвонить</a>
+    <a class="call" href="tel: +7 (3532) 30-77-17" v-if="!message">Позвонить</a>
     <div class="msg success" v-if="message">{{ message }}</div>
   </div>
 </template>
