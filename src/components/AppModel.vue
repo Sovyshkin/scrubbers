@@ -305,7 +305,15 @@ export default {
       active: false,
     };
   },
-  methods: {},
+  methods: {
+    open() {
+      try {
+        this.$emit("open");
+      } catch (err) {
+        console.log(err);
+      }
+    },
+  },
   mounted() {},
 };
 </script>
@@ -332,7 +340,7 @@ export default {
             <span class="item-value">{{ item.value }}</span>
           </div>
           <div class="wrap-arrow">
-            <a class="number" href="tel: 8(3532) 30-77-17">Запрос стоимости</a>
+            <a class="number" @click="open">Запрос стоимости</a>
             <img class="arrow" src="../assets/arrow-down.png" alt="" />
           </div>
         </div>
@@ -342,7 +350,7 @@ export default {
             <span class="item-value">{{ item.value }}</span>
           </div>
           <div class="wrap-arrow">
-            <a class="number" href="tel: 8(3532) 30-77-17">Запрос стоимости</a>
+            <div class="number" @click="open()">Запрос стоимости</div>
             <img class="arrow top" src="../assets/arrow-down.png" alt="" />
           </div>
         </div>

@@ -30,7 +30,7 @@ export default {
   <AppHeader />
   <AboutUs id="aboutus" @open="modal = true" />
   <AppServices id="services" />
-  <AppModel id="model" />
+  <AppModel id="model" @open="modal = true" />
   <UsContacts id="contacts" />
   <AppFooter />
   <v-dialog max-width="500" v-if="modal" v-model="modal">
