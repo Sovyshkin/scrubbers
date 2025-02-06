@@ -52,7 +52,7 @@ export default {
     <h1>Услуги</h1>
     <div class="services">
       <div class="group-obj">
-        <h2>Клининг</h2>
+        <h2 class="clin">Клининг</h2>
         <div class="group-items">
           <li class="item-group">
             <div class="listStyle"></div>
@@ -78,7 +78,7 @@ export default {
         </div>
       </div>
       <div class="group-obj">
-        <h2>Сервисное обслуживание</h2>
+        <h2 class="ser">Сервисное обслуживание</h2>
         <div class="group-items">
           <li class="item-group">
             <div class="listStyle"></div>
@@ -106,9 +106,10 @@ h1 {
 }
 
 h2 {
+  width: fit-content;
   text-align: center;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 28px;
   color: #fff;
 }
 
@@ -190,8 +191,9 @@ img:hover {
 }
 
 .item-group span {
-  font-size: 25px;
-  line-height: 28px;
+  width: fit-content;
+  font-size: 19px;
+  line-height: 22px;
   font-weight: 400;
   color: #fff;
 }
@@ -213,10 +215,11 @@ img:hover {
 }
 
 .group-obj {
+  width: 33%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 15px;
+  align-items: center;
 }
 
 .wrap-items {
@@ -226,12 +229,30 @@ img:hover {
 }
 
 .services {
+  width: 90%;
   display: flex;
   gap: 20px;
+  margin: 0 auto;
+  align-items: start;
   justify-content: space-between;
 }
 
+.clin {
+  padding-right: 140px;
+}
+
+.ser {
+  padding-right: 20px;
+}
+
 @media (max-width: 1200px) {
+  .services {
+    width: 100%;
+  }
+
+  .clin {
+    padding-right: 80px;
+  }
   .listGroup {
     gap: 15px;
     flex-direction: column;
@@ -265,9 +286,16 @@ img:hover {
   .services {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+  }
+
+  .clin,
+  .ser {
+    padding-right: 0;
   }
 
   .group-obj {
+    width: 100%;
     align-items: center;
   }
 }

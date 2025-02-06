@@ -24,8 +24,8 @@ export default {
     </h1>
     <div class="wrap">
       <div class="group-img">
-        <img src="../assets/block1.jpg" alt="" class="card" />
-        <!-- <img src="../assets/glare.png" alt="" class="glare" /> -->
+        <img src="../assets/card4.png" alt="" class="card" />
+        <img src="../assets/glare.png" alt="" class="glare" />
       </div>
       <div class="wrap-btns">
         <div class="desc">Продажа</div>
@@ -132,8 +132,7 @@ h1 {
 
 .card {
   width: 70%;
-  max-width: 800px;
-  border-radius: 15px;
+  max-width: 600px;
 }
 
 .noble {
@@ -162,12 +161,8 @@ h1 {
 }
 
 @media (max-width: 800px) {
-  .card {
-    width: 95%;
-  }
   .wrap {
     flex-direction: column;
-    gap: 20px;
   }
 
   .wrap-btns {
