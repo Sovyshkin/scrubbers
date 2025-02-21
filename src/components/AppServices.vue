@@ -13,7 +13,7 @@ export default {
   <div class="wrapper">
     <h1>Для каких объектов подходят наши машины</h1>
     <div class="wrap-group">
-      <div class="wrap-img"><img src="../assets/block2.jpeg" alt="" /></div>
+      <div class="wrap-img"><img src="../assets/block2.jpg" alt="" /></div>
       <div class="group">
         <li class="item-group">
           <div class="listStyle"></div>
@@ -54,35 +54,26 @@ export default {
       <div class="group-obj">
         <h2 class="clin">Клининг</h2>
         <div class="group-items">
-          <li class="item-group">
-            <div class="listStyle"></div>
-            <span>Комплексное обслуживание коммерческой недвижимости</span>
+          <li class="desc">
+            Комплексное обслуживание коммерческой недвижимости
           </li>
-          <li class="item-group">
-            <div class="listStyle"></div>
-            <span>Мойка окон и витражей</span>
-          </li>
-          <li class="item-group">
-            <div class="listStyle"></div>
-            <span>Уборка после строительства</span>
-          </li>
+          <li class="desc">Мойка окон и витражей</li>
+          <li class="desc">Уборка после строительства</li>
         </div>
       </div>
       <div class="group-obj">
         <h2>Аренда поломоечных машин</h2>
         <div class="group-items">
-          <li class="item-group">
-            <div class="listStyle"></div>
-            <span>Аренда поломоечных машин на сутки и длительный срок</span>
+          <li class="desc">
+            Аренда поломоечных машин на сутки и длительный срок
           </li>
         </div>
       </div>
       <div class="group-obj">
         <h2 class="ser">Сервисное обслуживание</h2>
         <div class="group-items">
-          <li class="item-group">
-            <div class="listStyle"></div>
-            <span>Ремонт и техническое обслуживание поломоечных машин</span>
+          <li class="desc">
+            Ремонт и техническое обслуживание поломоечных машин
           </li>
         </div>
       </div>
@@ -187,6 +178,8 @@ img:hover {
   flex: 48%;
   display: flex;
   align-items: center;
+
+  text-align: center;
   gap: 10px;
 }
 
@@ -237,12 +230,25 @@ img:hover {
   justify-content: space-between;
 }
 
-.clin {
-  padding-right: 140px;
+.desc {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #feb803 0%, #ff9a06 100%);
+  border-radius: 15px;
+  color: #030a1c;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  transition: all 500ms ease;
+  text-align: center;
+  max-width: 367px;
+  list-style: none;
 }
 
-.ser {
-  padding-right: 20px;
+.desc:hover,
+.number:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
 }
 
 @media (max-width: 1200px) {
