@@ -52,28 +52,37 @@ export default {
     <h1>Услуги</h1>
     <div class="services">
       <div class="group-obj">
-        <h2 class="clin">Клининг</h2>
+        <h2 class="clin desc">Клининг</h2>
         <div class="group-items">
-          <li class="desc">
-            Комплексное обслуживание коммерческой недвижимости
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Комплексное обслуживание коммерческой недвижимости</span>
           </li>
-          <li class="desc">Мойка окон и витражей</li>
-          <li class="desc">Уборка после строительства</li>
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Мойка окон и витражей</span>
+          </li>
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Уборка после строительства</span>
+          </li>
         </div>
       </div>
       <div class="group-obj">
-        <h2>Аренда поломоечных машин</h2>
+        <h2 class="desc">Аренда поломоечных машин</h2>
         <div class="group-items">
-          <li class="desc">
-            Аренда поломоечных машин на сутки и длительный срок
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Аренда поломоечных машин на сутки и длительный срок</span>
           </li>
         </div>
       </div>
       <div class="group-obj">
-        <h2 class="ser">Сервисное обслуживание</h2>
+        <h2 class="ser desc">Сервисное обслуживание</h2>
         <div class="group-items">
-          <li class="desc">
-            Ремонт и техническое обслуживание поломоечных машин
+          <li class="item-group">
+            <div class="listStyle"></div>
+            <span>Ремонт и техническое обслуживание поломоечных машин</span>
           </li>
         </div>
       </div>
@@ -102,22 +111,6 @@ h2 {
   font-size: 24px;
   line-height: 28px;
   color: #fff;
-}
-
-h2::after {
-  margin-top: 2px;
-  background-color: rgb(
-    227,
-    108,
-    9
-  ); /* Цвет линии при наведении на нее курсора мыши */
-  display: block;
-  content: "";
-  height: 2px; /* Высота линии */
-  width: 100%;
-  -webkit-transition: width 0.3s ease-in-out;
-  -moz--transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
 }
 
 .listStyle {
@@ -178,8 +171,6 @@ img:hover {
   flex: 48%;
   display: flex;
   align-items: center;
-
-  text-align: center;
   gap: 10px;
 }
 
