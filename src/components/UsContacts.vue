@@ -99,7 +99,7 @@ h1 {
 
 .wrap-map {
   overflow: hidden;
-  height: 38vh;
+  height: 43vh;
   border-radius: 15px;
 }
 
