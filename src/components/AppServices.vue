@@ -176,8 +176,8 @@ img:hover {
 
 .item-group span {
   width: fit-content;
-  font-size: 19px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 400;
   color: #fff;
 }

@@ -57,6 +57,7 @@ h1 {
   line-height: 57px;
   z-index: 2;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .desc {
@@ -131,7 +132,7 @@ h1 {
 }
 
 .card {
-  width: 70%;
+  width: 100%;
   max-width: 800px;
   border-radius: 15px;
 }
@@ -172,6 +173,11 @@ h1 {
 
   .wrap-btns {
     width: 80%;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 45px;
   }
 }
 
